@@ -15,14 +15,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         copiarArchivoDesdeAssets()
         procesarArchivoAssetsXML()
-        Log.d("prueba2", "probando procesado con Simple XML Framework")
+        Log.d("prueba", "probando procesado con Simple XML Framework")
         coordenadas.forEach {
-            Log.d("prueba2", it.lugar)
+            Log.d("prueba1", it.lugar)
         }
 
-        val coordenada1=Coordenada("Sevilla",48, 50 )
+        val coordenada1=Coordenada("Almería",48, 50 )
         addCoordenada(coordenada1)
-        val coordenada2=Coordenada("Málaga",44, 35 )
+        val coordenada2=Coordenada("Jaén",44, 35 )
         addCoordenada(coordenada2)
         ProcesarArchivoXMLInterno()
         coordenadas.forEach {
